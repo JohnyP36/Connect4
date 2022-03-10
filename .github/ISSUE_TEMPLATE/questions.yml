@@ -35,6 +35,6 @@ body:
     validations: 
       required: false
       
-- type: markdown
+  - type: markdown
     attributes: 
       value: "@JohnyP36"
