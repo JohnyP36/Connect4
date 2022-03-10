@@ -1,0 +1,36 @@
+name: Questions
+description: Template for asking questions about my repro and lists and other kinds of help support
+labels: question
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
+          required: true
+        - label: This is not a bug report. -- otherwise use this [template](https://github.com/JohnyP36/Connect4/issues/new?)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Your Question(s)
+      description: |
+        Be as clear as possible. Nobody can read your mind.
+      placeholder: |
+        Put here your question(s)
+    validations:
+      required: true
+      
+  - type: textarea
+    attributes: 
+      label: Screenshot(s)
+      description: Screenshot(s) for difficult to describe visual issues are **mandatory**.
+      value: |
+       <details>
+       <summary>Screenshot(s)</summary>
+       
+       <!-- drag-and-drop screenshot here -->
+       
+       </details>
+    validations: 
+      required: false
