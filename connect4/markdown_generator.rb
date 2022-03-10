@@ -55,6 +55,8 @@ class MarkdownGenerator
     markdown.concat <<~HTML
 
         Interested in how everything works? [Click here](https://github.com/JohnyP36/Connect4/tree/main/connect4) to read up on what's happening behind the scenes.
+        
+        If there is a bug or you have an issue [Click here](https://github.com/JohnyP36/Connect4/issues)
 
         **:alarm_clock: Most recent moves**
         | Team | Move | Made by |
