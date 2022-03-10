@@ -187,7 +187,6 @@ module Connect4
     end
 
     def acknowledge_issue
-      octokit.add_reaction(reaction: 'eyes')
       octokit.close_issue
     end
 
