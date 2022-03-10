@@ -42,7 +42,7 @@ class OctokitClient
     @octokit.update_contents(@repository, filepath, message, sha, content)
   end
   
-  def issues(labels: '')
+  def issues(labels: 'documentation')
     @issues ||= @octokit.list_issues(
       @repository,
       state: 'closed',
