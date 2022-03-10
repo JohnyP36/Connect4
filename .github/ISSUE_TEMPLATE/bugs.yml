@@ -51,9 +51,6 @@ body:
     validations: 
       required: false
 
-  - type: input
+  - type: markdown
     attributes: 
-      label: Do not change the text below
       value: "@JohnyP36"
-    validations:
-      required: true
