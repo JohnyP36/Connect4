@@ -42,15 +42,6 @@ class OctokitClient
     @octokit.update_contents(@repository, filepath, message, sha, content)
   end
 
-  def issues(labels: 'connect4')
-    @issues ||= @octokit.list_issues(
-      @repository,
-      state: 'closed',
-      labels: labels,
-      accept: PREVIEW_HEADERS
-    )&.select{ |issue| issue.reactions.confused == 0 }
-  end
-  
   def error_notification(reaction:, comment:, error: nil)
     add_reaction(reaction: reaction)
     add_comment(comment: comment)
