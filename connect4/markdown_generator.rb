@@ -23,6 +23,10 @@ class MarkdownGenerator
     markdown = <<~HTML
         # Hey, this is a Connect4 game 🔢
         
+        This game is based on [@JonathanGin52's Connect4 game](https://github.com/JonathanGin52/JonathanGin52)
+        
+        ##### read the LINCENSE [here](https://github.com/JohnyP36/Connect4/blob/main/LICENSE)
+        
         ---
         
         ## :game_die: Join my community Connect Four game!
