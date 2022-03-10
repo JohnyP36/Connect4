@@ -41,6 +41,15 @@ class OctokitClient
   def write_to_repo(filepath:, message:, sha:, content:)
     @octokit.update_contents(@repository, filepath, message, sha, content)
   end
+  
+  def issues(labels: 'documentation')
+    @issues ||= @octokit.list_issues(
+      @repository,
+      state: 'closed',
+      labels: labels,
+      accept: PREVIEW_HEADERS
+    )&.select{ |issue| issue.reactions.confused == 0 }
+  end
 
   def error_notification(reaction:, comment:, error: nil)
     add_reaction(reaction: reaction)
