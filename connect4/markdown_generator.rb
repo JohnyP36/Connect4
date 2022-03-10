@@ -22,7 +22,9 @@ class MarkdownGenerator
 
     markdown = <<~HTML
         # Hey, this is a Connect4 game 🔢
-
+        
+        ---
+        
         ## :game_die: Join my community Connect Four game!
         ![](https://img.shields.io/badge/Moves%20played-#{total_moves_played}-blue)
         ![](https://img.shields.io/badge/Completed%20games-#{completed_games}-brightgreen)
