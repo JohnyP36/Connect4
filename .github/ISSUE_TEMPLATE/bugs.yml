@@ -8,7 +8,7 @@ body:
       options:
         - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
           required: true
-        - label: This is not a question. -- otherwise use this [template](https://github.com/JohnyP36/Connect4/issues/new?)
+        - label: This is not a question. -- otherwise use this [template](https://github.com/JohnyP36/Connect4/issues/new?assignees=&labels=question&template=questions.yml)
           required: true
 
   - type: textarea
