@@ -1,0 +1,52 @@
+name: Bugs
+description: Template for reporting bugs in this repro
+labels: bug
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
+          required: true
+        - label: This is not a question. -- otherwise use this [template](https://github.com/JohnyP36/Connect4/issues/new?)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Description of the bug
+      description: |
+        Be as clear as possible. Nobody can read your mind.
+      placeholder: |
+        Describe the bug here
+    validations:
+      required: true
+
+  - type: textarea
+    attributes: 
+      label: Current behaviour
+      description: |
+        Describe what the current behaviour is
+    validations: 
+      required: true
+
+  - type: textarea
+    attributes: 
+      label: Expected behaviour
+      description: |
+        Describe what you want to see. Which behaviour do you want?
+    validations: 
+      required: true
+      
+  - type: textarea
+    attributes: 
+      label: Screenshot(s)
+      description: Screenshot(s) for difficult to describe visual issues are **mandatory**.
+      value: |
+       <details>
+       <summary>Screenshot(s)</summary>
+       
+       <!-- drag-and-drop screenshot here -->
+       
+       </details>
+    validations: 
+      required: false
