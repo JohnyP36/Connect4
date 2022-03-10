@@ -1,6 +1,4 @@
 ---
-:all_players:
-
-:game_winning_players:
-
+:all_players: 0
+:game_winning_players: 0
 :completed_games: 0
