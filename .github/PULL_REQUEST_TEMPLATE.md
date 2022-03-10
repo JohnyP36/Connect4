@@ -5,6 +5,7 @@
 > To avoid being banned, don't constantly re-open or create new (related) issue reports or pull requests.  
 ### Prerequisites
 <!-- Check the appropriate boxes before you submit your issue -->
+- [ ] I have read the [Contributing file](https://github.com/JohnyP36/Connect4/blob/main/.github/CONTRIBUTING.md)
 - [ ] This is more than one or two issue(s)
     - Otherwise open a [new issue](https://github.com/JohnyP36/Connect4/issues/new/choose)
 - [ ] I performed a cursory search of the issue tracker to avoid opening a duplicate issue
