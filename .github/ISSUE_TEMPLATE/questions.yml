@@ -6,6 +6,8 @@ body:
     attributes:
       label: Prerequisites
       options:
+        - label: I've read the [Code of Conduct](https://github.com/JohnyP36/Connect4/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/Connect4/blob/main/.github/CONTRIBUTING.md)
+          required: true
         - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
           required: true
         - label: This is not a bug report. -- otherwise use this [template](https://github.com/JohnyP36/Connect4/issues/new?assignees=&labels=bug&template=bugs.yml)
