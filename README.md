@@ -1,5 +1,9 @@
 # Hey, this is a Connect4 game 🔢
 
+This game is based on [@JonathanGin52's Connect4 game](https://github.com/JonathanGin52/JonathanGin52)
+
+##### read the LINCENSE [here](https://github.com/JohnyP36/Connect4/blob/main/LICENSE)
+
 ---
 
 ## :game_die: Join my community Connect Four game!
@@ -23,6 +27,8 @@ It is the **red** team's turn to play.
 Tired of waiting? [Request a move](https://github.com/JohnyP36/Connect4/issues/new?title=connect4%7Cdrop%7Cred%7Cai&body=Just+push+%27Submit+new+issue%27+without+editing+the+title.+The+README+will+be+updated+after+approximately+30+seconds.) from Connect4Bot :robot: 
 
 Interested in how everything works? [Click here](https://github.com/JohnyP36/Connect4/tree/main/connect4) to read up on what's happening behind the scenes.
+
+If there is a bug or you have an issue [Click here](https://github.com/JohnyP36/Connect4/issues)
 
 **:alarm_clock: Most recent moves**
 | Team | Move | Made by |
