@@ -48,3 +48,12 @@ labels:
         action: close
         locking: lock
         lock_reason: off-topic
+
+  - name: question
+    labeled:
+      issue:
+        body: Will you look at this, @JohnyP36 ?
+  - name: bug
+    labeled:
+      issue:
+        body: Will you look at this, @JohnyP36 ?
