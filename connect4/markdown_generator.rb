@@ -66,23 +66,6 @@ class MarkdownGenerator
     recent_moves.each { |(team, move, user)| markdown.concat("| #{team} | #{move} | #{user} |\n") }
 
     markdown.concat <<~HTML
-      **Top 20 Leaderboard: Most moves across all games.**
-      
-      | Moves | Who |
-      | ----- | --- |
-    HTML
-  
-    if issues.present?
-        moves = issues.select{|issue| issue.title.start_with? 'chess|move|'}.map{ |issue| issue.user.login }&.group_by(&:itself)&.transform_values(&:size).sort_by{|name,moves| moves }.reverse[0..19]
-        moves.each do |move|
-          markdown.concat "| #{move[1]} | [@#{move[0]}](https://github.com/#{move[0]}) |\n"
-        end
-    else
-       markdown.concat "| ¯\\_(ツ)_/¯ | History temporarily unavailable. |\n"
-    end
-
-
-    markdown.concat <<~HTML
 
         **:trophy: Leaderboard: Top 10 players with the most game winning moves :1st_place_medal:**
         | Player | Wins |
