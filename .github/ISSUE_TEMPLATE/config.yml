@@ -1,1 +1,11 @@
 blank_issues_enabled: true
+contact_links:
+  - name: Bug report
+    url: https://github.com/JohnyP36/Connect4/discussions/new?category=bug-report
+    about: Report a bug in this repo here
+  - name: Q&A
+    url: https://github.com/JohnyP36/Connect4/discussions/new?category=q-a
+    about: Ask the community for help
+  - name: Ideas
+    url: https://github.com/JohnyP36/Connect4/discussions/new?category=ideas
+    about: Share ideas for new features
