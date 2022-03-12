@@ -17,10 +17,55 @@ jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@v2
+      - name: Delete workflow runs (CodeQL - 31 days)
+        uses: MajorScruffy/delete-workflow-runs@v0.1.0
+        id: delete-workflow-codeql
+        with:
+          repository: JohnyP36/Connect4
+          workflow: ".github/workflows/codeql-analysis.yml"
+          older-than-seconds: 2678400
+          # created-before: "2021-12-08T16:34:00Z"
+          # actor: test@test.com
+          # branch: main
+          # event: push
+          # event: completed
+          maximum-workflow-runs-to-keep: 15
+          # what-if: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Delete workflow runs (Connect4 - 3 months)
+        uses: MajorScruffy/delete-workflow-runs@v0.1.0
+        id: delete-workflow-connect4
         with:
           token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          retain_days: 31
-          keep_minimum_runs: 75
+          repository: JohnyP36/Connect4
+          workflow: ".github/workflows/connect4.yml"
+          older-than-seconds: 7884000
+          maximum-workflow-runs-to-keep: 86
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Delete workflow runs ( - 3 months)
+        uses: MajorScruffy/delete-workflow-runs@v0.1.0
+        id: delete-workflow-main
+        with:
+          token: ${{ github.token }}
+          repository: JohnyP36/Connect4
+          workflow: ".github/workflows/connect4.yml"
+          older-than-seconds: 7884000
+          maximum-workflow-runs-to-keep: 12
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Delete workflow runs (Label Commenter - 1 year)
+        uses: MajorScruffy/delete-workflow-runs@v0.1.0
+        id: delete-workflow-label_commenter
+        with:
+          token: ${{ github.token }}
+          repository: JohnyP36/Connect4
+          workflow: ".github/workflows/connect4.yml"
+          older-than-seconds: 31536000
+          maximum-workflow-runs-to-keep: 12
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
