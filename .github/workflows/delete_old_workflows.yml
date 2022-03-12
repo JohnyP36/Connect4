@@ -38,7 +38,6 @@ jobs:
         uses: MajorScruffy/delete-workflow-runs@v0.1.0
         id: delete-workflow-connect4
         with:
-          token: ${{ github.token }}
           repository: JohnyP36/Connect4
           workflow: ".github/workflows/connect4.yml"
           older-than-seconds: 7884000
@@ -50,7 +49,6 @@ jobs:
         uses: MajorScruffy/delete-workflow-runs@v0.1.0
         id: delete-workflow-main
         with:
-          token: ${{ github.token }}
           repository: JohnyP36/Connect4
           workflow: ".github/workflows/connect4.yml"
           older-than-seconds: 7884000
@@ -62,7 +60,6 @@ jobs:
         uses: MajorScruffy/delete-workflow-runs@v0.1.0
         id: delete-workflow-label_commenter
         with:
-          token: ${{ github.token }}
           repository: JohnyP36/Connect4
           workflow: ".github/workflows/connect4.yml"
           older-than-seconds: 31536000
