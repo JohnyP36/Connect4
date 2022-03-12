@@ -10,8 +10,8 @@ labels:
       discussion:
         body: Thank you @{{ discussion.user.login }} for suggesting this. Please follow the contributing guidelines.
         locking: locked
-
-- name: wontfix
+  
+  - name: wontfix
     labeled:
       issue:
         body: This will not be worked on, but I appreciate your contribution.
@@ -27,7 +27,7 @@ labels:
         action: unanswered
         locking: unlock
 
-- name: duplicate
+  - name: duplicate
     labeled:
       issue:
         body: This issue already exists.
@@ -49,7 +49,7 @@ labels:
         body: My apologies. This isn't a duplicate (anymore).
         locking: unlock
 
-- name: can't reproduce
+  - name: can't reproduce
     labeled: 
       issue: 
         body: | 
@@ -65,7 +65,7 @@ labels:
       discussion: 
         body: My apologies. I didn't look close enough. I will work on the issue now.
 
-- name: off-topic
+  - name: off-topic
     labeled:
       issue:
         body: |
