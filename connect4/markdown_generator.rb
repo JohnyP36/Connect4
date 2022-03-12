@@ -69,8 +69,12 @@ class MarkdownGenerator
 
         <details>
            <summary> **:trophy: Leaderboard: Top 10 players with the most game winning moves :1st_place_medal:** </summary>
-                | Player | Wins |
-                | ------ | -----|
+           <!-- BEGIN WINNING MOVES --> 
+           
+        | Player | Wins |
+        | ------ | -----|
+        
+        <!-- END WINNING MOVES -->
         </details> 
     HTML
 
