@@ -67,9 +67,14 @@ class MarkdownGenerator
 
     markdown.concat <<~HTML
 
-        **:trophy: Leaderboard: Top 10 players with the most game winning moves :1st_place_medal:**
+        <details>
+        <summary> **:trophy: Leaderboard: Top 10 players with the most game winning moves :1st_place_medal:** </summary>
+        
         | Player | Wins |
         | ------ | -----|
+        
+        </details> 
+        
     HTML
 
     game_winning_players.first(10).each do |player, wins|
