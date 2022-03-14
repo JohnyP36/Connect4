@@ -75,9 +75,11 @@ class MarkdownGenerator
        </details>
     HTML
   
-    total_moves_played.first(5).each do |moves, player|
-      user = "[@#{player}](https://github.com/#{player})"
-      markdown.concat("| #{move_count} | #{player} |\n")
+    def generate_player_moves_table(player_moves)
+      table = "| Moves| Player |\n| - | - |\n"
+      player_moves.sort_by { |_, move_count| -move_count }.reduce(table) do |tbl, (player, move_count)|
+        tbl.concat("| #{player} | #{move_count} |\n")
+      end
     end
 
     markdown.concat <<~HTML
