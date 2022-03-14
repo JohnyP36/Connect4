@@ -66,22 +66,6 @@ class MarkdownGenerator
     recent_moves.each { |(team, move, user)| markdown.concat("| #{team} | #{move} | #{user} |\n") }
   
     markdown.concat <<~HTML
-    
-       <details><summary>Top 5 players with most moves</summary>
-       
-       #{generate_player_moves_table}
-       
-       </details>
-    HTML
-  
-    def generate_player_moves_table(player_moves)
-      table = "| Moves| Player |\n| - | - |\n"
-      player_moves.sort_by { |_, move_count| -move_count }.reduce(table) do |tbl, (move_count, player)|
-        tbl.concat("| #{move_count} | #{player}  |\n")
-      end
-    end
-
-    markdown.concat <<~HTML
 
         **:trophy: Leaderboard: Top 10 players with the most game winning moves :1st_place_medal:**
            
