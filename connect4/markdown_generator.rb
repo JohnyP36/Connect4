@@ -72,7 +72,7 @@ class MarkdownGenerator
        | Moves | Player |
        | ----- | ------ |
        
-       </details
+       </details>
     HTML
   
     total_moves_played.first(5).each do |moves, player|
