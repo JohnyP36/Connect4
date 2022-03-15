@@ -2,11 +2,11 @@ name: Delete old workflow runs
 on:
   workflow_dispatch:
     inputs:
-      older-than-seconds:
+      days:
         description: 'Number of days.'
         required: true
-        default: 2678400 (31 days)
-      maximum-workflow-runs-to-keep:
+        default: 182'
+      minimum_runs:
         description: 'The minimum runs to keep for each workflow.'
         required: true
         default: 20'
