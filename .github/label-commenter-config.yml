@@ -26,7 +26,7 @@ labels:
       issue:
         action: open
       discussion: 
-        body: @{{ author }} I came to another decision. I will work on it.
+        body: I came to another decision,  @{{ author }}. I will work on it.
         action: unanswered
         locking: unlock
 
