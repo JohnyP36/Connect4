@@ -2,11 +2,11 @@ name: Delete old workflow runs
 on:
   workflow_dispatch:
     inputs:
-      days:
+      older-than-seconds:
         description: 'Number of days.'
         required: true
-        default: 182'
-      minimum_runs:
+        default: 2678400 (31 days)
+      maximum-workflow-runs-to-keep:
         description: 'The minimum runs to keep for each workflow.'
         required: true
         default: 20'
@@ -17,6 +17,9 @@ jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+    
       - name: Delete workflow runs (CodeQL - 31 days)
         uses: MajorScruffy/delete-workflow-runs@v0.1.0
         id: delete-workflow-codeql
