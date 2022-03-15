@@ -2,13 +2,15 @@ labels:
   - name: invalid
     labeled:
       issue:
-        body: Thank you @{{ issue.user.login }} for suggesting this. Please follow the issue templates and contributing guidelines.
+        body: Thank you @{{ author }} for suggesting this. Please follow the issue templates and contributing guidelines.
         action: close
       pr:
-        body: Thank you @{{ pull_request.user.login }} for suggesting this. Please follow the pull request templates.
+        body: Thank you @{{ author }} for suggesting this. Please follow the pull request templates.
         action: close
       discussion:
-        body: Thank you @{{ discussion.user.login }} for suggesting this. Please follow the contributing guidelines.
+        body: | 
+          Thank you @{{ author }} for suggesting this. Please follow the contributing guidelines. 
+          Thus, this discussion has been locked
         locking: lock
   
   - name: wontfix
@@ -24,6 +26,7 @@ labels:
       issue:
         action: open
       discussion: 
+        body: @{{ author }} I came to another decision. I will work on it.
         action: unanswered
         locking: unlock
 
@@ -36,7 +39,7 @@ labels:
         body: This issue already exists.
         action: close
       discussion: 
-        body: This issue already exists.
+        body: This issue already exists. And thus been locked.
         locking: lock
     unlabeled:
       issue:
@@ -53,11 +56,11 @@ labels:
     labeled: 
       issue: 
         body: | 
-          Sorry @{{ issue.user.login }}, I can't reproduce your issue. Please give more information (e.g. screenshots)
+          Sorry @{{ author }}, I can't reproduce your issue. Please give more information (e.g. screenshots)
           or investigate if the problem/issue still occurs.
       discussion: 
         body: | 
-          Sorry @{{ discussion.user.login }}, I can't reproduce your issue. Please give more information (e.g. screenshots)
+          Sorry @{{ author }}, I can't reproduce your issue. Please give more information (e.g. screenshots)
           or investigate if the problem/issue still occurs.
     unlabeled: 
       issue: 
