@@ -9,7 +9,7 @@ labels:
         action: close
       discussion:
         body: Thank you @{{ discussion.user.login }} for suggesting this. Please follow the contributing guidelines.
-        locking: locked
+        locking: lock
   
   - name: wontfix
     labeled:
@@ -19,7 +19,7 @@ labels:
       discussion: 
         body: This will not be worked on, but I appreciate your contribution.
         action: answered
-        locking: locked
+        locking: lock
     unlabeled:
       issue:
         action: open
@@ -37,7 +37,7 @@ labels:
         action: close
       discussion: 
         body: This issue already exists.
-        locking: locked
+        locking: lock
     unlabeled:
       issue:
         body: My apologies. This isn't a duplicate (anymore).
