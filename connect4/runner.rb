@@ -167,7 +167,7 @@ module Connect4
     def generate_readme
       recent_moves = []
       octokit.issues.each do |issue|
-        break if recent_moves.length == 4 || issue.title.start_with?('connect4|new')
+        break if recent_moves.length == 5 || issue.title.start_with?('connect4|new')
 
         if issue.title.start_with?('connect4|drop|')
           *, team, move = issue.title.split('|')
