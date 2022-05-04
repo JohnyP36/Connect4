@@ -30,9 +30,11 @@ class MarkdownGenerator
         ---
         
         ## :game_die: Join my community Connect Four game!
-        ![](https://img.shields.io/badge/Moves%20played-#{total_moves_played}-blue)
-        ![](https://img.shields.io/badge/Completed%20games-#{completed_games}-brightgreen)
-        ![](https://img.shields.io/badge/Total%20players-#{metadata[:all_players].size}-orange)
+        <p >
+        <a align="center"><img src="https://img.shields.io/badge/Moves%20played-142-blue" /></a>
+        <a align="center"><img src="https://img.shields.io/badge/Completed%20games-4-brightgreen" /></a>
+        <a align="center"><img src="https://img.shields.io/badge/Total%20players-3-orange" /></a>
+        </p>
 
         Everyone is welcome to participate! To make a move, click on the **column number** you wish to drop your disk in.
 
