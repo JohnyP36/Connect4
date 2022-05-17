@@ -1,7 +1,7 @@
 name: Bugs
 description: Template for reporting bugs in this repro
 labels: bug
-assignees: @JohnyP36
+assignees: "@JohnyP36"
 body:
   - type: checkboxes
     attributes:
