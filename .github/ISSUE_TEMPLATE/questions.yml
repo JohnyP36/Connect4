@@ -1,6 +1,7 @@
 name: Questions
 description: Template for asking questions about my repro and lists and other kinds of help support
 labels: question
+assignees: "@JohnyP36"
 body:
   - type: checkboxes
     attributes:
