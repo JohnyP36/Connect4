@@ -1,4 +1,3 @@
-nes (48 sloc) 1.45 KB
 require 'octokit'
 
 class OctokitClient
